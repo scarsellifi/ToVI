@@ -26,7 +26,7 @@ from tovi import ToVI
 CONFIG = {
     'SUBSCRIPTION_KEY': {your subscription key}, 
     'LOCATION':   {your subscription key}, #'trial'
-    'ACCOUNT_ID': {your ACCOUNT_ID} # i must hidden in a configuration file 
+    'ACCOUNT_ID': {your ACCOUNT_ID}
 }
 
 ## instantiate the object 
