@@ -1,16 +1,22 @@
-# toVi
-## Library to upload file to Video Indexer from different sources in automatic way.
+# ToVi
+## Library to upload files to Video Indexer(VI) from different sources.
 
-Get free account video indexer on [Microsoft Site](https://vi.microsoft.com/it-it/) 
-and obtain your 
+Get free account of video indexer on [Microsoft](https://vi.microsoft.com/it-it/) 
+and obtain:
 * ACCOUNT_ID and
 ![ACCOUNT_ID](https://docs.microsoft.com/it-it/azure/media-services/video-indexer/media/video-indexer-use-apis/account-id.png)
 * SUBSCRIPTION_KEY
 ![SUBSCRIPTION_KEY](https://docs.microsoft.com/it-it/azure/media-services/video-indexer/media/video-indexer-use-apis/video-indexer-api03.png)
 
-#Installation 
+# Installation 
 ```bash
-pip3 install tovi 
+pip install tovi 
+```
+
+or 
+
+```bash
+pip3 install tovi
 ```
 
 # Use
@@ -34,13 +40,15 @@ vi = ToVI(
 vi.YouTubeToVI(youtube_link = "https://www.youtube.com/watch?v=a8fHgx9mE5U",
                   video_name = "lego",
                   video_language = "English")
+                  
+result = vi.get_video_info(vi.video_id)
 ```
 
+## Output
+[example of output](https://www.videoindexer.ai/accounts/247da5ad-66e3-4284-bdba-be073a8f32e7/videos/10bb0407d5/?location=Trial)
 
 
 ## Credits
 Thanks to [bklim](https://github.com/bklim5/python_video_indexer_lib) for his great python_video_indexer_lib.
 
-
-<iframe width="580" height="780" src="https://www.videoindexer.ai/embed/insights/247da5ad-66e3-4284-bdba-be073a8f32e7/10bb0407d5/" frameborder="0" allowfullscreen></iframe>
 
