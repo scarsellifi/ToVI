@@ -25,7 +25,7 @@ from tovi import ToVI
 
 CONFIG = {
     'SUBSCRIPTION_KEY': {your subscription key}, 
-    'LOCATION':   {your subscription key}, #'trial'
+    'LOCATION':   {location: set "trial" if you are using a new trial account},
     'ACCOUNT_ID': {your ACCOUNT_ID}
 }
 
